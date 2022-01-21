@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+} 
+html{
+    
+}
+/*   
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial";
+    background-color: #f4f4f5;
+  }
+*/ 
+/* body > div {
+    margin: auto;
+} */
+.header h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(7, 160, 221);
+    margin-bottom: 2%;
+    text-align: center;
+}
+.header p{
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: #615e5e;
+    text-align: center;
+    margin-bottom: 0.75%;
+}
+.content{
+    background-color: #eeebeb;
+    display: block;
+    margin: center;
+    text-align: center;
+}
+.avatar{
+    border-radius: 50%;
+    width: 150px;
+    margin: 2%;
+}
+.confirm{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: rgb(106, 194, 150);
+}
+.confirm i{
+    margin: 0 3px;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    color: darkturquoise;
+    margin-bottom: 0.75%;
+}
+.intro p{
+    margin: 0 5px;
+}
+hr{
+    width: 50%;
+    margin: 0 auto;
+}
+.info{
+    display: flex;
+    justify-content: center;
+}
+.info .info-job{
+    margin: 2% 7%;
+}
+.info-job--header{
+    color: darkturquoise;
+}
+.info-job--des{
+    display: flex;
+    justify-content: center;
+}
+.info-job--des i,
+.info-job--des p{
+    margin: 0 5px;
+}
+button{
+    width: 20%;
+    height: 40px;
+    background-color: rgb(144, 223, 223);
+    border: 1px solid aqua;
+}
+.contact:hover{
+    background-color: rgb(144, 223, 223, 0.5);
+}
+.contact .contact-info{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
