@@ -1,0 +1,37 @@
+.header{
+    padding-top: 60px;
+}
+.header::after{
+    top: 5%;
+    left: 0%;
+    padding: 60px;
+    content: "";
+    position: fixed;
+    border: 1px solid rgb(179, 161, 161);
+    width: 100%;  
+    z-index: -1;  
+}
+h2{
+    z-index: 1;
+}
+.note{
+    display: none;
+    position: fixed;
+    background-color: antiquewhite;
+    top: 12%;
+    left: 6.5%;
+    width: 20%;
+    font-size: 12px;
+    border: 1px solid black;
+    box-shadow: 2px 2px #888888;
+    z-index: 1;
+}
+h2:hover + .note{
+    display: block;
+}
+.content{
+    padding-top: 40px;
+}
+.location :not(.des){
+    font-size: 40px;
+}
