@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .main {
+        width: 60%;
+        border: solid 1px rgb(82, 158, 235);
+    }
+
+    .form {
+        width: 100%;
+        border: solid 1px rgb(82, 158, 235);
+        margin: auto;
+        background-color: rgb(82, 158, 235);
+        color: white;
+    }
+
+    tbody {
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <script>
+        var std = [
+            { "ten": "Tran Van A", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van B", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van C", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van D", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van E", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van F", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van G", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van H", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van I", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van J", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van K", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van L", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van M", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van N", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van O", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van P", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van Q", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van R", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van S", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" },
+            { "ten": "Tran Van T", "tuoi": "1", "diachi": "Ha Noi", "email": "a@gmail.com" }
+        ]
+    </script>
+    <div class="main">
+        <h4 class="form">Management Products</h4>
+        <table border="2" cellspacing="7">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Tuổi</th>
+                    <th>Địa chỉ</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <script>
+                    var index = 0;
+                    var N = Math.floor((Math.random() * 20) + 1);
+                    for (var i = 0; i <= N; i++) {
+                        document.write(`<tr>
+                            <td>${i + 1}</td>
+                            <td>${std[i].ten}</td>
+                            <td>${std[i].tuoi}</td>
+                            <td>${std[i].diachi}</td>
+                            <td>${std[i].email}</td>
+                        </tr>`);
+                    }
+                </script>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>
